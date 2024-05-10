@@ -1,0 +1,46 @@
+  body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+  }
+  #video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+  }
+  #content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+  }
+  #content h1 a {
+    font-family: 'Press Start 2P', cursive;
+    color: #FF5500;
+    text-decoration: none;
+    animation: blink 1s infinite alternate;
+  }
+  #content h1 a:hover {
+    color: #F9FF00;
+  }
+@keyframes blink {
+  0% {
+    opacity: 1;
+    }
+  50% {
+    opacity: 0;
+    }
+  100% {
+    opacity: 1;
+    }
+  }
+</s
